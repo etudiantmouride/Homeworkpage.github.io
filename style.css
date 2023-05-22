@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(13, 115, 115);
+}
+header nav ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+header nav ul li {
+    padding: 20px;
+    list-style-type: none;
+    width: 200px;
+    background-color: brown;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+header nav ul li a:hover {
+    background-color: rgb(212, 193, 164);
+    color: brown;
+    letter-spacing: 4px;
+    transition-duration: 1s;
+}
+
+
+.user {
+    background-color: gray;
+    width: 50%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.user .avatar {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.user .avatar:hover {
+    padding-left: 50px;
+    transition-duration: 1s;
+}
+
+.user .avatar img {
+    width: 135px;
+    height: 100%;
+    background-color: brown;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+.user .avatar img:hover {
+    background-color: rgb(212, 193, 164);
+    -webkit-transform: rotate(25deg);
+    transform: rotate(10deg);
+    transition-duration: 2s;
+}
+
+.user .name  {
+    padding-top: 40px;
+    padding-left: 30px;
+}
+
+.user .name h3 {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+
+@media (max-width:767px) {
+    header nav ul {
+        display: grid;
+    }
+    header nav ul li {
+        display: block;
+        width: 400px;
+        text-align: center;
+    }
+    header nav ul li a {
+        padding-top: 10px;
+    }
+    .user {
+        width: 90%;
+    }
+    
+}
+
+@media (max-width:567px) {
+    
+    header nav ul {
+        display: grid;
+    }
+   
+    header nav ul li a {
+        padding-top: 10px;
+    }
+    .user {
+        width: 90%;
+    }
+}
